@@ -6,10 +6,10 @@
     <artifactId>trabalho-final</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <sonar.projectKey>AndrewsSouza_trab-final-verival</sonar.projectKey>
-        <sonar.organization>andrewssouza</sonar.organization>
+        <sonar.projectKey>ArthurLamberti_trab-final</sonar.projectKey>
+        <sonar.organization>arthurlamberti</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>acc3158baac48003830c6a9b25e2dc416611a7ab</sonar.login>
+        <sonar.login>6fc8c7a635305e41f23ad821141f60d322b8ef10</sonar.login>
     </properties>
     <dependencies>
 
@@ -46,6 +46,12 @@
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
         <!-- Dependencia do JavaFX -->
         <!--
