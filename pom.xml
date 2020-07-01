@@ -20,6 +20,13 @@
         </plugins>
     </build>
 
+    <properties>
+        <sonar.projectKey>AndrewsSouza_trab-final-verival</sonar.projectKey>
+        <sonar.organization>andrewssouza</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>a5ebbd6800a36ae039360817e3f6f501490609cb</sonar.login>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
