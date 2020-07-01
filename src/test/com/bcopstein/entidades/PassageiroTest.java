@@ -11,7 +11,7 @@ class PassageiroTest {
     public void testaGetPontuacaoMedia() {
         int ptAcumulada = 50;
         int qtdAvaliacoes = 10;
-        Passageiro psg = Passageiro.passageiroExistente("cpf", "Npme Teste", ptAcumulada, qtdAvaliacoes);
+        Passageiro psg = Passageiro.passageiroExistente("cpf", "Nome Teste", ptAcumulada, qtdAvaliacoes);
         double mediaEsperada = 50.0 / 10.0;
 
         assertEquals(mediaEsperada, psg.getPontuacaoMedia());
@@ -23,7 +23,7 @@ class PassageiroTest {
         int qtdAvaliacoes = 0;
         int novaAvaliacao = 10;
 
-        Passageiro psg = Passageiro.passageiroExistente("cpf", "Npme Teste", ptAcumulada, qtdAvaliacoes);
+        Passageiro psg = Passageiro.passageiroExistente("cpf", "Nome Teste", ptAcumulada, qtdAvaliacoes);
         psg.infoPontuacao(novaAvaliacao);
 
         assertEquals(qtdAvaliacoes + 1, psg.getQtdadeAvaliacoes());
