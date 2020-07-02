@@ -1,9 +1,9 @@
-package com.bcopstein.casosDeUso.Servicos;
+package com.bcopstein.casosdeuso.servicos;
 
-import com.bcopstein.casosDeUso.Politicas.CalculoCustoViagem;
-import com.bcopstein.casosDeUso.Politicas.CustoViagem;
-import com.bcopstein.casosDeUso.Repositorios.RepositorioBairros;
-import com.bcopstein.casosDeUso.Repositorios.RepositorioPassageiros;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagem;
+import com.bcopstein.casosdeuso.politicas.CustoViagem;
+import com.bcopstein.casosdeuso.repositorios.RepositorioBairros;
+import com.bcopstein.casosdeuso.repositorios.RepositorioPassageiros;
 import com.bcopstein.entidades.Bairro;
 import com.bcopstein.entidades.Passageiro;
 import com.bcopstein.entidades.Roteiro;

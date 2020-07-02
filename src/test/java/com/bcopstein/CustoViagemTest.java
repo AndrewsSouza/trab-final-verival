@@ -1,8 +1,8 @@
 package com.bcopstein;
 
-import com.bcopstein.casosDeUso.Politicas.CalculoCustoViagem;
-import com.bcopstein.casosDeUso.Politicas.CalculoCustoViagemBasico;
-import com.bcopstein.casosDeUso.Politicas.CustoViagem;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagem;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagemBasico;
+import com.bcopstein.casosdeuso.politicas.CustoViagem;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;

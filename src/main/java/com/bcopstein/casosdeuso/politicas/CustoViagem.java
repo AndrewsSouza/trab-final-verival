@@ -1,4 +1,4 @@
-package com.bcopstein.casosDeUso.Politicas;
+package com.bcopstein.casosdeuso.politicas;
 
 import com.bcopstein.entidades.Passageiro;
 import com.bcopstein.entidades.Roteiro;

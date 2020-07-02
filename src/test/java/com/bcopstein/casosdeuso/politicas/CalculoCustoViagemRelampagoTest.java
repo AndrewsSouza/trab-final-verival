@@ -1,4 +1,4 @@
-package com.bcopstein.casosDeUso.Politicas;
+package com.bcopstein.casosdeuso.politicas;
 
 import com.bcopstein.entidades.Bairro;
 import com.bcopstein.entidades.Passageiro;
@@ -14,30 +14,32 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-class CalculoCustoViagemVeraoTest {
-    private CalculoCustoViagemVerao alvo;
+class CalculoCustoViagemRelampagoTest {
+    private CalculoCustoViagemRelampago alvo;
     private List<Bairro> bairros;
 
     @BeforeEach
     public void setup() {
-        this.alvo = new CalculoCustoViagemVerao();
+        this.alvo = new CalculoCustoViagemRelampago();
         this.bairros = Arrays.asList(
                 Bairro.novoBairroRetangular("Bom Fim", new Ponto(10, 40), 20, 10, 10.0),
                 Bairro.novoBairroRetangular("Independecia", new Ponto(30, 40), 20, 10, 10.0),
-                Bairro.novoBairroRetangular("Moinhos de Vento", new Ponto(20, 30), 20, 10, 10.0)
+                Bairro.novoBairroRetangular("Moinhos de Vento", new Ponto(20, 30), 20, 10, 10.0),
+                Bairro.novoBairroRetangular("Auxiliadora", new Ponto(40, 30), 20, 10, 10.0)
         );
     }
 
     @Test
-    void testaComDescontoDePontuacao() {
+    void comDescontoDePontuacao() {
         Passageiro psg = mock(Passageiro.class);
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
 
-        when(psg.getPontuacaoMedia()).thenReturn(10);
+        when(psg.getPontuacaoMedia()).thenReturn(6);
+        when(psg.getQtdadeAvaliacoes()).thenReturn(31);
 
-        double custoBasicoEsperado = 30.0;
-        double descontoEsperado = custoBasicoEsperado * 0.9;
+        double custoBasicoEsperado = 40.0;
+        double descontoEsperado = custoBasicoEsperado * 0.05;
 
         this.alvo.defineRoteiro(rt);
         this.alvo.definePassageiro(psg);
@@ -48,12 +50,13 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    void testaSemDescontoDePontuacaoPorMediaBaixa() {
+    void semDescontoDePontuacaoPorFaltaAvaliacoes() {
         Passageiro psg = mock(Passageiro.class);
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
 
-        when(psg.getPontuacaoMedia()).thenReturn(9);
+        when(psg.getPontuacaoMedia()).thenReturn(6);
+        when(psg.getQtdadeAvaliacoes()).thenReturn(30);
 
         double descontoEsperado = 0;
 
@@ -66,12 +69,31 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    void testaComDescontoSazonal() {
+    void semDescontoDePontuacaoPorMediaBaixa() {
+        Passageiro psg = mock(Passageiro.class);
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
 
-        double custoBasicoEsperado = 30.0;
-        double descontoEsperado = custoBasicoEsperado * 0.1;
+        when(psg.getPontuacaoMedia()).thenReturn(5);
+        when(psg.getQtdadeAvaliacoes()).thenReturn(31);
+
+        double descontoEsperado = 0;
+
+        this.alvo.defineRoteiro(rt);
+        this.alvo.definePassageiro(psg);
+
+        double observado = this.alvo.descontoPontuacao();
+
+        assertEquals(descontoEsperado, observado);
+    }
+
+    @Test
+    void comDescontoSazonal() {
+        Roteiro rt = mock(Roteiro.class);
+        when(rt.bairrosPercoridos()).thenReturn(bairros);
+
+        double custoBasicoEsperado = 40.0;
+        double descontoEsperado = custoBasicoEsperado * 0.05;
 
         this.alvo.defineRoteiro(rt);
 
@@ -81,9 +103,9 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    void testaSemDescontoSazonal() {
+    void semDescontoSazonal() {
         Roteiro rt = mock(Roteiro.class);
-        when(rt.bairrosPercoridos()).thenReturn(Arrays.asList(this.bairros.get(0), this.bairros.get(1)));
+        when(rt.bairrosPercoridos()).thenReturn(Arrays.asList(this.bairros.get(0), this.bairros.get(1), this.bairros.get(2)));
 
         double descontoEsperado = 0;
 

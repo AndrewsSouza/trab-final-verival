@@ -1,4 +1,4 @@
-package com.bcopstein.casosDeUso.Repositorios;
+package com.bcopstein.casosdeuso.repositorios;
 
 import com.bcopstein.entidades.Passageiro;
 

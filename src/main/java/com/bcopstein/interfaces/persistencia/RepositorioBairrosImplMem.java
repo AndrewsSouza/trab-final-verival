@@ -1,6 +1,6 @@
-package com.bcopstein.interfaces.Persistencia;
+package com.bcopstein.interfaces.persistencia;
 
-import com.bcopstein.casosDeUso.Repositorios.RepositorioBairros;
+import com.bcopstein.casosdeuso.repositorios.RepositorioBairros;
 import com.bcopstein.entidades.Bairro;
 import com.bcopstein.entidades.geometria.Ponto;
 
