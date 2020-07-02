@@ -19,6 +19,16 @@ class PassageiroTest {
     }
 
     @Test
+    void testaGetPontuacaoMediaSemAvaliacao() {
+        int ptAcumulada = 0;
+        int qtdAvaliacoes = 0;
+        Passageiro psg = Passageiro.passageiroExistente("cpf", "Nome Teste", ptAcumulada, qtdAvaliacoes);
+        double mediaEsperada = 0;
+
+        assertEquals(mediaEsperada, psg.getPontuacaoMedia());
+    }
+
+    @Test
     void testaInfoPontuacao() {
         int ptAcumulada = 0;
         int qtdAvaliacoes = 0;

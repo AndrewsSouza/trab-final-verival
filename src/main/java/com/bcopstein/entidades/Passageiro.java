@@ -30,6 +30,9 @@ public class Passageiro {
     }
 
     public int getPontuacaoMedia() {
+        if(qtdadeAvaliacoes == 0){
+            return 0;
+        }
         return pontuacaoAcumulada / qtdadeAvaliacoes;
     }
 
