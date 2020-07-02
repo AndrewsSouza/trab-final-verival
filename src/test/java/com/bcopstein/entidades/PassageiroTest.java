@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class PassageiroTest {
 
     @Test
-    public void testaGetPontuacaoMedia() {
+    void testaGetPontuacaoMedia() {
         int ptAcumulada = 50;
         int qtdAvaliacoes = 10;
         Passageiro psg = Passageiro.passageiroExistente("cpf", "Nome Teste", ptAcumulada, qtdAvaliacoes);
@@ -18,7 +18,7 @@ class PassageiroTest {
     }
 
     @Test
-    public void testaInfoPontuacao() {
+    void testaInfoPontuacao() {
         int ptAcumulada = 0;
         int qtdAvaliacoes = 0;
         int novaAvaliacao = 10;
@@ -31,7 +31,7 @@ class PassageiroTest {
     }
 
     @Test
-    public void testaInfoPontuacaoComExcecao() {
+    void testaInfoPontuacaoComExcecao() {
         int ptAcumulada = 0;
         int qtdAvaliacoes = 0;
         int novaAvaliacao = -1;

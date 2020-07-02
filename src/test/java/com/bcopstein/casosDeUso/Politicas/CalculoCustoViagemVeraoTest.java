@@ -29,7 +29,7 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    public void testaComDescontoDePontuacao() {
+    void testaComDescontoDePontuacao() {
         Passageiro psg = mock(Passageiro.class);
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
@@ -48,7 +48,7 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    public void testaSemDescontoDePontuacaoPorMediaBaixa() {
+    void testaSemDescontoDePontuacaoPorMediaBaixa() {
         Passageiro psg = mock(Passageiro.class);
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
@@ -66,7 +66,7 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    public void testaComDescontoSazonal() {
+    void testaComDescontoSazonal() {
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
 
@@ -81,7 +81,7 @@ class CalculoCustoViagemVeraoTest {
     }
 
     @Test
-    public void testaSemDescontoSazonal() {
+    void testaSemDescontoSazonal() {
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(Arrays.asList(this.bairros.get(0), this.bairros.get(1)));
 

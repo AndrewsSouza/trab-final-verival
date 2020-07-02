@@ -12,7 +12,7 @@ import static org.mockito.Mockito.when;
 public class CustoViagemTest {
 
     @Test
-    public void custoViagemTTest() {
+    void custoViagemTest() {
         CalculoCustoViagem ccv = mock(CalculoCustoViagemBasico.class);
         when(ccv.custoViagem()).thenReturn(35.0);
         double rEsp = 35.0;

@@ -28,7 +28,7 @@ class ServicosPassageiroTest {
     private ServicosPassageiro alvo;
 
     @BeforeEach
-    public void setup() {
+    void setup() {
         this.repBairros = mock(RepositorioBairros.class);
         this.repPassageiros = mock(RepositorioPassageiros.class);
         this.calculoCustoViagem = mock(CalculoCustoViagem.class);
@@ -37,7 +37,7 @@ class ServicosPassageiroTest {
     }
 
     @Test
-    public void testaGetListaBairros() {
+    void testaGetListaBairros() {
         Bairro b1 = mock(Bairro.class);
         String b1Name = "Bairro Teste";
         when(b1.getNome()).thenReturn(b1Name);
@@ -49,7 +49,7 @@ class ServicosPassageiroTest {
     }
 
     @Test
-    public void testaGetPassageirosCadastrados() {
+    void testaGetPassageirosCadastrados() {
         Passageiro p1 = mock(Passageiro.class);
         String p1Name = "Passageiro Teste";
         when(p1.getNome()).thenReturn(p1Name);
@@ -61,7 +61,7 @@ class ServicosPassageiroTest {
     }
 
     @Test
-    public void testaCriaRoteiro() {
+    void testaCriaRoteiro() {
         Area area1 = mock(Area.class);
         Area area2 = mock(Area.class);
         when(area1.pontoCentral()).thenReturn(new Ponto(15, 30));
@@ -87,7 +87,7 @@ class ServicosPassageiroTest {
     }
 
     @Test
-    public void testaCriaViagem() {
+    void testaCriaViagem() {
         int id = 1;
         String cpfPassageiro = "00000000001";
         Roteiro roteiro = mock(Roteiro.class);

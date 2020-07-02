@@ -27,14 +27,14 @@ public class RoteiroTest {
     }
 
     @Test
-    public void testaRota() {
+    void testaRota() {
         Roteiro roteiro = new Roteiro(bairros.get(1), bairros.get(4), bairros);
         Reta rotaEsp = new Reta(new Ponto(40, 35), new Ponto(50, 15));
         assertEquals(rotaEsp, roteiro.getRota());
     }
 
     @Test
-    public void testaBairrosPercorridos() {
+    void testaBairrosPercorridos() {
         Roteiro roteiro = new Roteiro(bairros.get(1), bairros.get(4), bairros);
         Collection<Bairro> esperado = new ArrayList<>();
         esperado.add(bairros.get(1));

@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class BairroTest {
 
     @Test
-    public void testaCriacaoBairroQuadrado() {
+    void testaCriacaoBairroQuadrado() {
         String nomeBairro = "Ipiranga";
         Bairro b = Bairro.novoBairroQuadrado(nomeBairro, new Ponto(100, 100), 50, 20);
         assertEquals(nomeBairro, b.getNome());
@@ -19,7 +19,7 @@ public class BairroTest {
     }
 
     @Test
-    public void testaCriacaoBairroRetangular() {
+    void testaCriacaoBairroRetangular() {
         String nomeBairro = "Bom Fim";
         Bairro b = Bairro.novoBairroRetangular(nomeBairro, new Ponto(10, 40), 20, 10, 10);
         assertEquals(nomeBairro, b.getNome());
