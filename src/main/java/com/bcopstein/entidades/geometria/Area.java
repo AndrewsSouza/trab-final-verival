@@ -3,7 +3,8 @@ package com.bcopstein.entidades.geometria;
 import java.util.Objects;
 
 public class Area {
-    private Ponto pSupEsq, pInfDir;
+    private Ponto pSupEsq;
+    private Ponto pInfDir;
 
     public Area(Ponto pSupEsq, Ponto pInfDir) {
         if ((pSupEsq.getX() >= pInfDir.getX()) || (pSupEsq.getY() <= pInfDir.getY())) {
