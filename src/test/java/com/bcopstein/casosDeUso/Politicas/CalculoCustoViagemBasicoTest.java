@@ -30,7 +30,7 @@ class CalculoCustoViagemBasicoTest {
     }
 
     @Test
-    public void testaCalculoCustoBasico() {
+    void testaCalculoCustoBasico() {
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
         double custoEsperado = 50.0;
@@ -43,7 +43,7 @@ class CalculoCustoViagemBasicoTest {
     }
 
     @Test
-    public void testaCustoViagem() {
+    void testaCustoViagem() {
         Roteiro rt = mock(Roteiro.class);
         when(rt.bairrosPercoridos()).thenReturn(bairros);
         double custoBasicoEsperado = 50.0;
