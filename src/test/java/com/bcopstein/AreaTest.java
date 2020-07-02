@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.Assert.assertEquals;
 
-public class AreaTest {
+class AreaTest {
     private Area area;
 
     @BeforeEach
