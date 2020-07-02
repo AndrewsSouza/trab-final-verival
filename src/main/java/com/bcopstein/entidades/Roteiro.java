@@ -1,8 +1,8 @@
-package com.bcopstein.unit.entidades;
+package com.bcopstein.entidades;
 
-import com.bcopstein.unit.entidades.geometria.Ponto;
-import com.bcopstein.unit.entidades.geometria.Reta;
-import com.bcopstein.unit.entidades.geometria.SituacaoReta;
+import com.bcopstein.entidades.geometria.Ponto;
+import com.bcopstein.entidades.geometria.Reta;
+import com.bcopstein.entidades.geometria.SituacaoReta;
 
 import java.util.Collection;
 import java.util.LinkedList;

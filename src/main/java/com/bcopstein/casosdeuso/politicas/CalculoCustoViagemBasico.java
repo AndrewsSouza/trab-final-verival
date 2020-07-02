@@ -1,8 +1,8 @@
-package com.bcopstein.unit.casosdeuso.politicas;
+package com.bcopstein.casosdeuso.politicas;
 
-import com.bcopstein.unit.entidades.Bairro;
-import com.bcopstein.unit.entidades.Passageiro;
-import com.bcopstein.unit.entidades.Roteiro;
+import com.bcopstein.entidades.Bairro;
+import com.bcopstein.entidades.Passageiro;
+import com.bcopstein.entidades.Roteiro;
 
 public class CalculoCustoViagemBasico implements CalculoCustoViagem {
     private Roteiro roteiro;

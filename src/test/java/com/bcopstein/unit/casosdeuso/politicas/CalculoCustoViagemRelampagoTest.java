@@ -1,9 +1,10 @@
 package com.bcopstein.unit.casosdeuso.politicas;
 
-import com.bcopstein.unit.entidades.Bairro;
-import com.bcopstein.unit.entidades.Passageiro;
-import com.bcopstein.unit.entidades.Roteiro;
-import com.bcopstein.unit.entidades.geometria.Ponto;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagemRelampago;
+import com.bcopstein.entidades.Bairro;
+import com.bcopstein.entidades.Passageiro;
+import com.bcopstein.entidades.Roteiro;
+import com.bcopstein.entidades.geometria.Ponto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

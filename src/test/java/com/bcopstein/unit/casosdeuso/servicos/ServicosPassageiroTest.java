@@ -1,14 +1,15 @@
 package com.bcopstein.unit.casosdeuso.servicos;
 
-import com.bcopstein.unit.casosdeuso.politicas.CalculoCustoViagem;
-import com.bcopstein.unit.casosdeuso.repositorios.RepositorioBairros;
-import com.bcopstein.unit.casosdeuso.repositorios.RepositorioPassageiros;
-import com.bcopstein.unit.entidades.Bairro;
-import com.bcopstein.unit.entidades.Passageiro;
-import com.bcopstein.unit.entidades.Roteiro;
-import com.bcopstein.unit.entidades.Viagem;
-import com.bcopstein.unit.entidades.geometria.Area;
-import com.bcopstein.unit.entidades.geometria.Ponto;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagem;
+import com.bcopstein.casosdeuso.repositorios.RepositorioBairros;
+import com.bcopstein.casosdeuso.repositorios.RepositorioPassageiros;
+import com.bcopstein.casosdeuso.servicos.ServicosPassageiro;
+import com.bcopstein.entidades.Bairro;
+import com.bcopstein.entidades.Passageiro;
+import com.bcopstein.entidades.Roteiro;
+import com.bcopstein.entidades.Viagem;
+import com.bcopstein.entidades.geometria.Area;
+import com.bcopstein.entidades.geometria.Ponto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

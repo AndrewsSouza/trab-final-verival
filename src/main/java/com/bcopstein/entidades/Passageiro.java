@@ -1,4 +1,4 @@
-package com.bcopstein.unit.entidades;
+package com.bcopstein.entidades;
 
 public class Passageiro {
     private String cpf;

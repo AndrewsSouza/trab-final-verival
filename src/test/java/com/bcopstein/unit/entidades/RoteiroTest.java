@@ -1,7 +1,9 @@
 package com.bcopstein.unit.entidades;
 
-import com.bcopstein.unit.entidades.geometria.Ponto;
-import com.bcopstein.unit.entidades.geometria.Reta;
+import com.bcopstein.entidades.Bairro;
+import com.bcopstein.entidades.Roteiro;
+import com.bcopstein.entidades.geometria.Ponto;
+import com.bcopstein.entidades.geometria.Reta;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

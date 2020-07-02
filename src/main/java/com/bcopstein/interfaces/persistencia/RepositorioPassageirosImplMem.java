@@ -1,7 +1,7 @@
-package com.bcopstein.unit.interfaces.persistencia;
+package com.bcopstein.interfaces.persistencia;
 
-import com.bcopstein.unit.casosdeuso.repositorios.RepositorioPassageiros;
-import com.bcopstein.unit.entidades.Passageiro;
+import com.bcopstein.casosdeuso.repositorios.RepositorioPassageiros;
+import com.bcopstein.entidades.Passageiro;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,18 +1,18 @@
 package com.bcopstein.integration;
 
-import com.bcopstein.unit.casosdeuso.politicas.CalculoCustoViagem;
-import com.bcopstein.unit.casosdeuso.politicas.CalculoCustoViagemBasico;
-import com.bcopstein.unit.casosdeuso.politicas.CalculoCustoViagemRelampago;
-import com.bcopstein.unit.casosdeuso.politicas.CalculoCustoViagemVerao;
-import com.bcopstein.unit.casosdeuso.repositorios.RepositorioBairros;
-import com.bcopstein.unit.casosdeuso.repositorios.RepositorioPassageiros;
-import com.bcopstein.unit.casosdeuso.servicos.ServicosPassageiro;
-import com.bcopstein.unit.entidades.Bairro;
-import com.bcopstein.unit.entidades.Passageiro;
-import com.bcopstein.unit.entidades.Roteiro;
-import com.bcopstein.unit.entidades.Viagem;
-import com.bcopstein.unit.interfaces.persistencia.RepositorioBairrosImplMem;
-import com.bcopstein.unit.interfaces.persistencia.RepositorioPassageirosImplMem;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagem;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagemBasico;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagemRelampago;
+import com.bcopstein.casosdeuso.politicas.CalculoCustoViagemVerao;
+import com.bcopstein.casosdeuso.repositorios.RepositorioBairros;
+import com.bcopstein.casosdeuso.repositorios.RepositorioPassageiros;
+import com.bcopstein.casosdeuso.servicos.ServicosPassageiro;
+import com.bcopstein.entidades.Bairro;
+import com.bcopstein.entidades.Passageiro;
+import com.bcopstein.entidades.Roteiro;
+import com.bcopstein.entidades.Viagem;
+import com.bcopstein.interfaces.persistencia.RepositorioBairrosImplMem;
+import com.bcopstein.interfaces.persistencia.RepositorioPassageirosImplMem;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

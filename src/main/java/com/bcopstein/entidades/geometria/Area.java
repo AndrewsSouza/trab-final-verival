@@ -1,4 +1,4 @@
-package com.bcopstein.unit.entidades.geometria;
+package com.bcopstein.entidades.geometria;
 
 import java.util.Objects;
 

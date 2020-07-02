@@ -1,7 +1,7 @@
-package com.bcopstein.unit.entidades;
+package com.bcopstein.entidades;
 
-import com.bcopstein.unit.entidades.geometria.Area;
-import com.bcopstein.unit.entidades.geometria.Ponto;
+import com.bcopstein.entidades.geometria.Area;
+import com.bcopstein.entidades.geometria.Ponto;
 
 public class Bairro {
     private String nome;

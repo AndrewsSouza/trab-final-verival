@@ -1,4 +1,4 @@
-package com.bcopstein.unit.entidades;
+package com.bcopstein.entidades;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

@@ -1,12 +1,11 @@
-package com.bcopstein.unit.casosdeuso.politicas;
+package com.bcopstein.casosdeuso.politicas;
 
-public class CalculoCustoViagemRelampago extends CalculoCustoViagemBasico {
+public class CalculoCustoViagemVerao extends CalculoCustoViagemBasico {
     @Override
     public double descontoPontuacao() {
         double custobasico = calculoCustoBasico();
-        if (getPassageiro().getPontuacaoMedia() > 5.0 &&
-                getPassageiro().getQtdadeAvaliacoes() > 30) {
-            return custobasico * 0.05;
+        if (getPassageiro().getPontuacaoMedia() > 9.0) {
+            return custobasico * 0.9;
         } else {
             return 0.0;
         }
@@ -16,8 +15,8 @@ public class CalculoCustoViagemRelampago extends CalculoCustoViagemBasico {
     public double descontoPromocaoSazonal() {
         int qtdadeBairros = getRoteiro().bairrosPercoridos().size();
         double cb = calculoCustoBasico();
-        if (qtdadeBairros > 3) {
-            return cb * 0.05;
+        if (qtdadeBairros > 2) {
+            return cb * 0.1;
         } else {
             return 0.0;
         }

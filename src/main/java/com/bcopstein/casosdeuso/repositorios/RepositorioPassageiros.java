@@ -1,6 +1,6 @@
-package com.bcopstein.unit.casosdeuso.repositorios;
+package com.bcopstein.casosdeuso.repositorios;
 
-import com.bcopstein.unit.entidades.Passageiro;
+import com.bcopstein.entidades.Passageiro;
 
 import java.util.List;
 

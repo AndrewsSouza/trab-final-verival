@@ -1,5 +1,9 @@
 package com.bcopstein.unit.entidades.geometria;
 
+import com.bcopstein.entidades.geometria.Area;
+import com.bcopstein.entidades.geometria.Ponto;
+import com.bcopstein.entidades.geometria.Reta;
+import com.bcopstein.entidades.geometria.SituacaoReta;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

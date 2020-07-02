@@ -1,7 +1,7 @@
-package com.bcopstein.unit.casosdeuso.politicas;
+package com.bcopstein.casosdeuso.politicas;
 
-import com.bcopstein.unit.entidades.Passageiro;
-import com.bcopstein.unit.entidades.Roteiro;
+import com.bcopstein.entidades.Passageiro;
+import com.bcopstein.entidades.Roteiro;
 
 public interface CalculoCustoViagem {
     void defineRoteiro(Roteiro roteiro);

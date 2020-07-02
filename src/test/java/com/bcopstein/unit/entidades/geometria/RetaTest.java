@@ -1,5 +1,7 @@
 package com.bcopstein.unit.entidades.geometria;
 
+import com.bcopstein.entidades.geometria.Ponto;
+import com.bcopstein.entidades.geometria.Reta;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
