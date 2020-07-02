@@ -1,5 +1,7 @@
 package com.bcopstein.entidades.geometria;
 
+import java.util.Objects;
+
 public class Area {
     private Ponto pSupEsq, pInfDir;
 
@@ -70,5 +72,10 @@ public class Area {
         Area area = (Area) o;
         return pSupEsq.equals(area.pSupEsq) &&
                 pInfDir.equals(area.pInfDir);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(pSupEsq, pInfDir);
     }
 }

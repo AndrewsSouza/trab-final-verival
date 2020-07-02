@@ -1,6 +1,7 @@
 package com.bcopstein.entidades;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Viagem {
     private int id;
@@ -53,5 +54,10 @@ public class Viagem {
                 dataHora.equals(viagem.dataHora) &&
                 roteiro.equals(viagem.roteiro) &&
                 passageiro.equals(viagem.passageiro);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, dataHora, roteiro, passageiro, valorCobrado);
     }
 }

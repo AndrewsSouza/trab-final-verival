@@ -1,5 +1,7 @@
 package com.bcopstein.entidades.geometria;
 
+import java.util.Objects;
+
 public class Reta {
     private Ponto p1, p2;
 
@@ -18,8 +20,8 @@ public class Reta {
 
     public double tamanho() {
         return Math.sqrt(
-                Math.pow(p2.getX() - p1.getX(), 2) +
-                        Math.pow(p2.getY() - p1.getY(), 2));
+                Math.pow( (double) p2.getX() - p1.getX(), 2) +
+                        Math.pow( (double) p2.getY() - p1.getY(), 2));
     }
 
     @Override
@@ -34,5 +36,10 @@ public class Reta {
         Reta reta = (Reta) o;
         return p1.equals(reta.p1) &&
                 p2.equals(reta.p2);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(p1, p2);
     }
 }

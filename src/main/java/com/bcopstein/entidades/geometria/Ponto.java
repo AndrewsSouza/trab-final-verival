@@ -1,5 +1,7 @@
 package com.bcopstein.entidades.geometria;
 
+import java.util.Objects;
+
 public class Ponto {
     private int x;
     private int y;
@@ -29,5 +31,10 @@ public class Ponto {
         Ponto ponto = (Ponto) o;
         return x == ponto.x &&
                 y == ponto.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 }
