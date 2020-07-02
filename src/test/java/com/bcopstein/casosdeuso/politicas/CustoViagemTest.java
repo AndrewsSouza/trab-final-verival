@@ -1,4 +1,4 @@
-package com.bcopstein;
+package com.bcopstein.casosdeuso.politicas;
 
 import com.bcopstein.casosdeuso.politicas.CalculoCustoViagem;
 import com.bcopstein.casosdeuso.politicas.CalculoCustoViagemBasico;

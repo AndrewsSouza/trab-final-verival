@@ -1,4 +1,4 @@
-package com.bcopstein;
+package com.bcopstein.entidades;
 
 import com.bcopstein.entidades.Bairro;
 import com.bcopstein.entidades.Roteiro;

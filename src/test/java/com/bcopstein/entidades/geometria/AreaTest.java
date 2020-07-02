@@ -1,4 +1,4 @@
-package com.bcopstein;
+package com.bcopstein.entidades.geometria;
 
 import com.bcopstein.entidades.geometria.Area;
 import com.bcopstein.entidades.geometria.Ponto;
