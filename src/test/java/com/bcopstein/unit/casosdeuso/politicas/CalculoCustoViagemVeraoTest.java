@@ -38,7 +38,7 @@ class CalculoCustoViagemVeraoTest {
         when(psg.getPontuacaoMedia()).thenReturn(10);
 
         double custoBasicoEsperado = 30.0;
-        double descontoEsperado = custoBasicoEsperado * 0.9;
+        double descontoEsperado = custoBasicoEsperado * 0.09;
 
         this.alvo.defineRoteiro(rt);
         this.alvo.definePassageiro(psg);
